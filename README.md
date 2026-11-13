@@ -5,6 +5,9 @@
 - **Mòdul:** Projecte Intermodular
 
 ## Resum del projecte
+
+### Exercici2
+
 **Training2(2.1):**
 He utilitzat float() en lloc de int() perquè la mida del costat d'un quadrat pot tenir decimals. Per calcular l'àrea he posat costat * costat i he guardat el resultat a la variable area abans d'imprimir-lo fent la multiplicació dins del print. Al print he posat la f davant de les cometes per ficar la variable dins del text de manera més senzilla.
 
@@ -17,6 +20,8 @@ Aquí he gastat input() directament sense int() ni float() perquè estem demanan
 **Training2(2.4):**
 He gastat float() a les entrades perquè l'usuari pugui introduir decimals sense que el programa doni error. Primer he guardat la suma exacta a la variable suma_decimal i després li he convertit a enter amb int() dins d'una altra variable (resultat_enter)així mostro el resultat original i el numero arrodonit. Als print he posat la f davant de les cometes per inserir les variables directament dins del text.
 
+### Exercici3
+
 **Training3(3.1):**
 He utilitzat int() perquè l'edat és un número sencer i sense decimals. A la condició he posat >= 18 i no només perquè si algú té 18 anys justos també conte com a major d'edat. Com que només hi ha 2 opcions possibles, en un if i un else es prou i no cal posar elif.
 
@@ -25,6 +30,8 @@ Aqui he posat float() en lloc de int() per a que es pugui escriure en números d
 
 **Training3(3.3):**
 He posat >= 0 per a que el zero conte dins dels positius i així poder fer l'exercici només amb un if i un else sense afegir un elif només per al zero. Si el número no és 0 o més gran pos sera negatiu així que l'else ja cobreix tots els altres casos.
+
+### Exercici4
 
 **Training4(4.1):**
 He triat un bucle for amb range() en lloc d'un while perquè ja ho se on comença i on acaba la seqüència i així m'estalvio de crear comptador manualment. Dins del range he posat (1, 201) i no (1, 200) perquè python se para un número abans del límit final que poses i d'aquesta manera m'asseguro que el 200 també quedi inclòs. Per quedar només amb els parells he utilitzat l'operador mòdul (i % 2 == 0) que comprova si el residu de dividir el número entre 2 és 0 i només quan es compleix ho mostra per pantalla.
@@ -35,7 +42,7 @@ He utilitzat un bucle while True amb un break en lloc d'un bucle for perquè no 
 **Training4(4.3):**
 He fet servir un bucle for i in range(10) en lloc d'un while perquè ja sé des del principi que s'han de demanar exactament 10 números. A l'entrada he posat float() perquè l'usuari pugui escriure números amb decimals. Dins del bucle miro si el número és més petit que zero (num < 0) i si ho és mostro el missatge i poso un break per tallar el bucle al moment perquè si ja he trobat un de negatiu no cal demanar la resta de números. Al final he posat else alineat amb el for i no en if per a que aquest else només s'execute si el bucle acaba les 10 voltes senceres sense haver entrat mai al break així no cal crear una variable extra per recordar si ha sortit algun negatiu o no.
 
-**Training5(funcions):**
+### Exercici5
 
-### Exercici1
+**Training5(Exercici 1. Calculadora de preus):**
 He creat una funció amb def que rep dos paràmetres (preu_peces i ma_obra) per poder reutilitzar la fórmula amb qualsevol reparació sense haver de repetir la suma cada vegada. Dins de la funció faig servir return preu en lloc d'un print perquè així el resultat es pot guardar en una variable i es pot aprofitar més endavant en altres càlculs.
