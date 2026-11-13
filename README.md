@@ -34,3 +34,8 @@ He utilitzat un bucle while True amb un break en lloc d'un bucle for perquè no 
 
 **Training4(4.3):**
 He fet servir un bucle for i in range(10) en lloc d'un while perquè ja sé des del principi que s'han de demanar exactament 10 números. A l'entrada he posat float() perquè l'usuari pugui escriure números amb decimals. Dins del bucle miro si el número és més petit que zero (num < 0) i si ho és mostro el missatge i poso un break per tallar el bucle al moment perquè si ja he trobat un de negatiu no cal demanar la resta de números. Al final he posat else alineat amb el for i no en if per a que aquest else només s'execute si el bucle acaba les 10 voltes senceres sense haver entrat mai al break així no cal crear una variable extra per recordar si ha sortit algun negatiu o no.
+
+**Training5(funcions):**
+
+### Exercici1
+He creat una funció amb def que rep dos paràmetres (preu_peces i ma_obra) per poder reutilitzar la fórmula amb qualsevol reparació sense haver de repetir la suma cada vegada. Dins de la funció faig servir return preu en lloc d'un print perquè així el resultat es pot guardar en una variable i es pot aprofitar més endavant en altres càlculs.
