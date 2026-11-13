@@ -46,3 +46,30 @@ He fet servir un bucle for i in range(10) en lloc d'un while perquè ja sé des 
 
 **Training5(Exercici 1. Calculadora de preus):**
 He creat una funció amb def que rep dos paràmetres (preu_peces i ma_obra) per poder reutilitzar la fórmula amb qualsevol reparació sense haver de repetir la suma cada vegada. Dins de la funció faig servir return preu en lloc d'un print perquè així el resultat es pot guardar en una variable i es pot aprofitar més endavant en altres càlculs.
+
+**1.Quants paràmetres té la funció?** La funció de calcular_preu té 2 paràmetres que son (preu_peces, ma_obra).
+
+**2.Quin valor retorna?** Retorna el valor de la variable preu que es el cost total de sumar les peces i la mà d'obra.
+
+**3.Què passaria si eliminéssim el return?** La funció faria el càlcul però no donaria cap dada.
+
+**Training5(Exercici 2. Funcions amb condicions):**
+He utilitzat una estructura if, elif, else perquè cada tipus de client té una tarifa diferent i només se li pot aplicar una de les opcions. Multiplico directament per 0.90 per treure el 10% i per 0.85 per treure el 15% perquè és més curt i directe que calcular el descompte a part i després restar-lo. Al final he posat un else per controlar si algú escriu un tipus de client que no existeix avisa per pantalla i retorna el preu original sense descompte.
+
+**Training5(Exercici 3. Funcions que criden altres funcions):**
+He separat el càlcul de IVA en una funció (calcular_iva) perque era mes fàcil. Dins de calcular_factura crido primer aplicar_descompte i després calcular_iva sobre el preu ja rebaixat (preu_descompte) perquè l'IVA sempre s'ha de calcular un cop aplicat el descompte. Al final sumo els 2 imports i faig un return total per obtenir el preu final de la factura.
+
+**Training5(Exercici 4. Programa complet: servei tècnic):**
+He dividit el programa en 2 funcions (mostrar_menu i nova_reparacio) per a no tindre el codi barrejat. A nova_reparacio utilitzo float() per als preus perquè poden tenir decimals, aprofito les funcions dels exercicis anteriors per no repetir fórmules i retorno total al final per poder-los sumar a la facturació acumulada. Fora de les funcions creo les variables reparacions i facturacio a 0 abans del bucle while perquè no es reinicien cada vegada i faig que el while opcio != "4" vagi repetint el menú fins que l'usuari trie sortir.
+
+**Training5(Exercici 5. Reflexió final):**
+
+**4.Quina diferència hi ha entre print() i return?** print() només ensenya un resultat per pantalla per a que l'usuari pugui llegir però el programa no li guarda. En canvi return fa que el programa el pugui guardar en una variable.
+
+**5.Per què és millor dividir un programa en funcions?** Perquè el codi queda més ordenat, curt i fàcil d'entendre. Si hi ha algun error és més fàcil trobar i arreglar dins d'una funció petita enlloc de buscar-lo en codi barrejat.
+
+**6.Què és un paràmetre?** És la dada que posem dins dels parèntesis d'una funció per a que sapigue que en quin valor ha de treballar.
+
+**7.Què és una variable local?** És una variable que es crea dins d'una funció. Només existeix i es pot fer servir dins mentre la funció s'està executant un cop s'acaba la funció s'esborra i no es pot utilitzar des de la resta del programa.
+
+**8.Quins avantatges té reutilitzar una funció?** Ens estalvia de escriure el mateix codi varies vegades. Tambe si algun dia hem de canviar una fórmula per exemple canviar el percentatge de l'IVA només haurem de modificar una vegada dins de la funció i tot el programa estra actualitzat.
